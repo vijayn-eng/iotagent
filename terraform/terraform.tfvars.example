@@ -1,0 +1,14 @@
+# Copy to terraform.tfvars and fill in. These are the ONLY values you need.
+
+# Confluent Cloud "Cloud resource management" API key/secret.
+confluent_cloud_api_key    = "XXXXXXXXXXXXXXXX"
+confluent_cloud_api_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# AWS IAM user (long-lived key) allowed to call bedrock:InvokeModel in the
+# Bedrock region set in terraform/main.tf (default us-east-1).
+aws_access_key_id     = "AKIAxxxxxxxxxxxxxxxx"
+aws_secret_access_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# Optional: set false to deploy only infra/tables/functions and build the
+# agent live in the Flink workspace from sql/02_agent.sql + sql/03_pipeline.sql.
+# deploy_flink_pipeline = false

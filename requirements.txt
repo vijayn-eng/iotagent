@@ -1,0 +1,7 @@
+# Local apps (plant simulator + dashboard). Everything else runs in Confluent Cloud.
+confluent-kafka[schemaregistry,avro]
+fastavro
+python-dotenv
+streamlit
+altair
+pandas
